@@ -27,29 +27,17 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     OtpScreen()
-//                    Calendar()
-//                    ComposeMap()
-//                    StreetViewScreen()
-//                    SwipeToRefreshList()
-//                    SwipeList()
-//                    BlurImage()
-//                    TryLaunchedEffect()
-//                    AndroidCanvas()
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
+@ExperimentalComposeUiApi
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     OtpApplicationTheme {
-        Greeting("Android")
+        OtpScreen()
     }
 }
